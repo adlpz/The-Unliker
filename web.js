@@ -20,5 +20,3 @@ http.createServer(function(request, response) {
     response.close();
 }).listen(process.env.PORT);
 
-
-app.listen(process.env.PORT);
