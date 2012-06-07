@@ -17,6 +17,6 @@ fs.readFile('./index.html', function (err, data) {
 http.createServer(function(request, response) {
     response.writeHeader(200, {"Content-Type": "text/html"});
     response.write(index);
-    response.close();
+    response.end();
 }).listen(process.env.PORT);
 
