@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    color: #666;
+    font-family: "Verdana";
+}
+
+a {
+    color: #388342;
+    text-decoration: none;
+}
+
+.f-l {
+    float: left;
+} 
+
+.f-r {
+    float: right;
+}
+
+.instructions {
+    width: 400px;
+    font-size: .9em;
+}
+
+header {
+    display: block;
+    background: #1a1a1a;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 4em;
+}
+
+header h2 {
+    margin: 0;
+    color: #bbb;
+    font-size: 1.4em;
+}
+
+header p {
+    margin: 0;
+    color: #444;
+    font-size .8em;
+}
+
+section#status {
+    display: block;
+    background: #2952CC;
+    color: #fff;
+    padding: 0px 50px;
+}
+section#status p {
+    margin: 0;
+}
+
+.StatusButton {
+    padding: 0px 15px;
+    font-weight: bold;
+    background: #1a1a1a;
+}
+
+.StatusButton:hover {
+    background: #333;
+}
+
+.SelectAllButton {
+    color: #fff;
+}
+
+.DeleteButton {
+    color: #B80B0B;
+}
+
+#LogoutButton {
+    float: right;
+    margin: 20px;
+    display: none;
+}
+
+section#login {
+    text-align: center;
+    margin: 30px 50px;
+}
+section#content {
+    display: none;
+    margin: 10px 50px;
+}
+
+ul#MainList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul#MainList li {
+    display: inline;
+}
+
+ul#MainList li div {
+    margin: 4px;
+    padding: 4px;
+    height: 20px;
+    border: 1px solid #ccc;
+    color: #000;
+    font-size: .8em;
+}
+
+ul#MainList li img {
+    display: none;
+    height: 60px;
+    float: left;
+    padding: 0 30px 0 0 ;
+}
+
+ul#MainList li div a {
+    overflow: hidden;
+    margin-right: 50px;
+    height: 20px;
+    white-space: nowrap;
+    text-wrap: none;
+}
+
+ul#MainList li .fb_iframe_widget {
+    float: right;
+}
+
+.forDeletion {
+    background: #B80B0B;
+    color: #fff!important;
+}
