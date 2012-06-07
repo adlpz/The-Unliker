@@ -1,8 +1,8 @@
 {
-  "name":    "facebook-template-node",
+  "name":    "unliker",
   "version": "0.0.1",
 
-  "description": "Template app for Heroku / Facebook integration, Node.js language",
+  "description": "The Unliker: Mass-like manager for Facebook",
 
   "dependencies": {
     "async":     "0.1.18",
