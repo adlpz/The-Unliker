@@ -2,6 +2,7 @@
 
 var util = require('util'),
     express = require('express'),
+    http = require('http'),
     fs = require('fs'),
     index;
              
@@ -11,6 +12,7 @@ fs.readFile('./index.html', function (err, data) {
     }
     index = data;
 });
+
 
 http.createServer(function(request, response) {
     response.writeHeader(200, {"Content-Type": "text/html"});
