@@ -16,8 +16,12 @@ var app = express.createServer(
     express.static(__dirname + '/static')
 );
 
+var port = process.env.PORT || 3000;
+app.listen(port, function() {
+    console.log("Listening on " + port);
+});
+
 app.get('/', function(req, res) {
     res.send(index);
 }
 
-app.listen(process.env.PORT);
