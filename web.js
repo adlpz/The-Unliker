@@ -1,6 +1,6 @@
 // node.js (for Heroku). Simply serve the HTML
 
-var sys = require('sys'),
+var util = require('util'),
     express = require('express'),
     fs = require('fs'),
     index;
