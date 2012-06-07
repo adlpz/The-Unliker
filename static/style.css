@@ -29,6 +29,8 @@ header {
 }
 
 header h1 {
+    display: inline;
+    vertical-align: top;
     margin: 0;
     color: #fff;
     font-size: 4em;
@@ -44,6 +46,11 @@ header p {
     margin: 0;
     color: #444;
     font-size .8em;
+}
+
+header .fb_iframe_widget {
+    display: inline;
+    margin: 0;
 }
 
 #infobar {
