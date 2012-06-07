@@ -22,6 +22,8 @@ app.listen(port, function() {
 });
 
 app.get('/', function(req, res) {
+    res.header("Content-Type", "text/html");
     res.send(index);
+    res.end();
 });
 
