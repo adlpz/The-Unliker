@@ -2,7 +2,6 @@
 
 var util = require('util'),
     express = require('express'),
-    http = require('http'),
     fs = require('fs'),
     index;
              
@@ -13,10 +12,12 @@ fs.readFile('./index.html', function (err, data) {
     index = data;
 });
 
+var app = express.createServer(
+    express.static(__dirname + '/static')
+);
 
-http.createServer(function(request, response) {
-    response.writeHeader(200, {"Content-Type": "text/html"});
-    response.write(index);
-    response.end();
-}).listen(process.env.PORT);
+app.get('/', function(req, res) {
+    res.send(index);
+}
 
+app.listen(process.env.PORT);
