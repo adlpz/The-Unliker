@@ -12,17 +12,11 @@ fs.readFile('./index.html', function (err, data) {
     index = data;
 });
 
-var app = express.createServer(
-    express.logger(),
-    express.static(__dirrname + '/static'),
-    express.bodyParser(),
-    express.cookieParser(),
-    express.session({ secret: process.env.SESSION_SECRET || "lolmysecret" }),
-    require('faceplate').middleware({
-        app_id: process.env.FACEBOOK_APP_ID,
-        secret: process.env.FACEBOOK_SECRET,
-        scope: 'user_likes,user_interests,user_activities'
-    })
-};
+http.createServer(function(request, response) {
+    response.writeHeader(200, {"Content-Type": "text/html"});
+    response.write(index);
+    response.close();
+}).listen(process.env.PORT);
+
 
 app.listen(process.env.PORT);
